@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { icons, Menu, X } from "lucide-react"
 import { Button } from "./ui/button"
 import { ModeToggle } from "./mode-toggle"
 

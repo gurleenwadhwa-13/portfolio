@@ -6,8 +6,8 @@
     "module": "ESNext",
     "composite": true,
     "skipLibCheck": true,
-    "outDir": "dist/client",
-    "rootDir": "src/client",
+    "outDir": "dist",
+    "rootDir": ".",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
