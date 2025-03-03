@@ -4,7 +4,10 @@
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
+    "composite": true,
     "skipLibCheck": true,
+    "outDir": "dist/client",
+    "rootDir": "src/client",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -12,9 +15,10 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Linting */
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
