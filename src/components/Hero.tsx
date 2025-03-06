@@ -54,7 +54,7 @@ const Hero = () => {
                 className="text-xl md:text-2xl text-blue-600 dark:text-blue-200/80 mb-6"
                 variants={itemVariants}
               >
-                Software Engineer — React.js, Node.js, Python
+                Software Engineer — React.js, Node.js, Python, Flask
               </motion.h2>
 
               <motion.p className="text-lg max-w-2xl mb-8 text-slate-700 dark:text-slate-300" variants={itemVariants}>
