@@ -1,4 +1,5 @@
 import { Card, CardContent } from "./ui/card"
+import Portfolio from "../assets/images/portfolio_picture.jpg"
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
             <Card className="border-none shadow-lg">
               <CardContent className="p-0">
                 <img
-                  src="/placeholder.svg?height=600&width=500"
+                  src={Portfolio}
                   alt="Gurleen Wadhwa"
                   className="w-full h-auto rounded-lg"
                 />
