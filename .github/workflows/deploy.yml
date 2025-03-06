@@ -20,11 +20,11 @@ jobs:
 
     # Installing app dependecies, uses package-lock.json for this.
     - name: Install Dependencies
-      uses: npm install
+      run: npm install
 
     # Build the production version of our code on this Ubuntu Machine
     - name: Build Production distribution
-      uses: npm run build
+      run: npm run build
     
     # Configuring the AWS Credentials, uses from AWS workspaces and IAM of AWS.
     - name: Configure and Authenticate AWS Credentials
