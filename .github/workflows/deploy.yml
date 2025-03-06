@@ -16,7 +16,7 @@ jobs:
     - name: Setup NodeJS env
       uses: actions/setup-node@v3
       with:
-        node-version: '23.5.0'
+        node-version: '20'
 
     # Installing app dependecies, uses package-lock.json for this.
     - name: Install Dependencies
@@ -33,6 +33,13 @@ jobs:
         aws-access-key-id: ${{  secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{  secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
+
+    - name: Install AWS CLI
+    run: |
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install --update
+      aws --version
 
     # Sync our Dist folder here to S3
     - name: Deploy the static site to S3 bucket
