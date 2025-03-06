@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checking out the full repo using github checkout
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Setting up our node environment on Ubuntu Remote Machine
+    - name: Setup NodeJS env
+      uses: actions/setup-node@v3
+      with:
+        node-version: '23.5.0'
+
+    # Installing app dependecies, uses package-lock.json for this.
+    - name: Install Dependencies
+      uses: npm install
+
+    # Build the production version of our code on this Ubuntu Machine
+    - name: Build Production distribution
+      uses: npm run build
+    
+    # Configuring the AWS Credentials, uses from AWS workspaces and IAM of AWS.
+    - name: Configure and Authenticate AWS Credentials
+      uses: aws-actions/configure-aws-credentails@v1
+      with:
+        aws-access-key-id: ${{  secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{  secrets.AWS_SECRET_ACCESS_KEY_ID }}
+        aws-region: us-east-2
+
+    # Sync our Dist folder here to S3
+    - name: Deploy the static site to S3 bucket
+      run: aws s3 sync ./dist/ s3://portfolio-march-2025-s3/ --delete
+
+    # Invalidate ClioudFront cache, so that all POP locations serve the latest distribution
+    - name: Invalidate CloudFront Cache
+      run: aws cloudfront create-invalidation --distribution-id "E999DDP94QU07" --paths "/*" --caller-reference $(date +%s)
+      env:
+        AWS_REGION: us-east-1
+
+
