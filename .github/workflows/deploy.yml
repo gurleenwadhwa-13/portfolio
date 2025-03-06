@@ -35,12 +35,12 @@ jobs:
         aws-region: us-east-2
 
     - name: Install AWS CLI
-    run: |
-      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      unzip awscliv2.zip
-      sudo ./aws/install --update
-      aws --version
-
+      run: |
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install --update
+        aws --version
+    
     # Sync our Dist folder here to S3
     - name: Deploy the static site to S3 bucket
       run: aws s3 sync ./dist/ s3://portfolio-march-2025-s3/ --delete
