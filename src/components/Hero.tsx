@@ -47,7 +47,7 @@ const Hero = () => {
                 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-slate-950 dark:from-slate-50 dark:via-white dark:to-slate-200"
                 variants={itemVariants}
               >
-                Gurleen Wadhwa
+                Hi, I'm Gurleen Wadhwa
               </motion.h1>
 
               <motion.h2

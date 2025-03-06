@@ -176,8 +176,8 @@ export const PulseBeams: React.FC<PulseBeamsProps> = ({ children, className = ""
 // Floating particles component
 const Particles = () => {
   return (
-    <div className="absolute inset-0 z-0 opacity-30">
-      {[...Array(25)].map((_, i) => (
+    <div className="absolute inset-0 z-10 opacity-30">
+      {[...Array(250)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute rounded-full bg-blue-400 dark:bg-blue-500"
@@ -188,7 +188,7 @@ const Particles = () => {
             left: Math.random() * 100 + "%",
           }}
           animate={{
-            y: [0, -15, 0],
+            y: [10, -15, 0],
             opacity: [0.4, 0.8, 0.4],
           }}
           transition={{
@@ -199,7 +199,7 @@ const Particles = () => {
           }}
         />
       ))}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(250)].map((_, i) => (
         <motion.div
           key={i + 25}
           className="absolute rounded-full bg-purple-400 dark:bg-purple-500"
@@ -221,7 +221,7 @@ const Particles = () => {
           }}
         />
       ))}
-      {[...Array(15)].map((_, i) => (
+      {[...Array(250)].map((_, i) => (
         <motion.div
           key={i + 45}
           className="absolute rounded-full bg-cyan-300 dark:bg-cyan-400"
@@ -259,6 +259,16 @@ export const SVGs = () => {
     >
       <path
         d="M269 220.5H16.5C10.9772 220.5 6.5 224.977 6.5 230.5V398.5"
+        stroke="var(--slate-800, rgba(30, 41, 59, 0.5))"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M269 220.5H16.5C10.9772 220.5 6.5 224.977 6.5 230.5V398.5"
+        stroke="var(--slate-800, rgba(30, 41, 65, 0.5))"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M568 200H841C846.523 200 851 195.523 851 190V40"
         stroke="var(--slate-800, rgba(30, 41, 59, 0.5))"
         strokeWidth="1.5"
       />
