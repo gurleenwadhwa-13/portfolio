@@ -54,12 +54,11 @@ const Hero = () => {
                 className="text-xl md:text-2xl text-blue-600 dark:text-blue-200/80 mb-6"
                 variants={itemVariants}
               >
-                Software Engineer — React.js, Node.js, Python, Flask
+                I moved across the globe to pursue Computer Science when I was 18, so far so good.
               </motion.h2>
 
               <motion.p className="text-lg max-w-2xl mb-8 text-slate-700 dark:text-slate-300" variants={itemVariants}>
-                Building scalable web applications with modern technologies. Passionate about creating efficient,
-                user-friendly solutions.
+              Exploring my interests in Compilers, Distributed Systems
               </motion.p>
 
               <motion.div className="flex flex-wrap justify-center gap-4 mb-12" variants={itemVariants}>
