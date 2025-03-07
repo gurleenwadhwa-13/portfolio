@@ -157,7 +157,7 @@ const Contact = () => {
                 <div className="flex flex-wrap gap-4">
                   <Button variant="outline" asChild>
                     <a
-                      href="https://linkedin.com/in/"
+                      href="https://www.linkedin.com/in/gurleen-wadhwa-56829a1a0/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -183,7 +183,7 @@ const Contact = () => {
                   </Button>
                   <Button variant="outline" asChild>
                     <a
-                      href="https://github.com/"
+                      href="https://github.com/gurleenwadhwa-13"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
