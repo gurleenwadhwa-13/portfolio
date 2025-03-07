@@ -40,4 +40,4 @@ jobs:
 
     # Invalidate ClioudFront cache, so that all POP locations serve the latest distribution
     - name: Invalidate CloudFront Cache
-      run: aws cloudfront create-invalidation --distribution-id "E999DDP94QU07" --paths "/*"
+      run: aws cloudfront create-invalidation --distribution-id  ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
