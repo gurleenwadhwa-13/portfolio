@@ -75,7 +75,7 @@ const Hero = () => {
                   className="bg-white/80 border-slate-200 hover:bg-slate-100 text-slate-800 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 dark:text-white transition-all duration-300 pointer-events-auto"
                 >
                   <a
-                    href="https://drive.google.com/file/d/1gABmCZGeWEOv6lQwFjTSnJqn7QLkXL1T/view"
+                    href="https://drive.google.com/file/d/1FUt7a8sW7QjKWwCKTTlGssD1csQWA8zP/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
