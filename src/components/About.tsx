@@ -10,14 +10,14 @@ const About = () => {
           <div className="w-20 h-1 bg-primary rounded-full mb-8"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
-            <Card className="border-none shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-auto">
+          <div className="mb-5 pb-5 rounded-full max-w-lg">
+            <Card className="max-w-lg border-none shadow-lg rounded-full ">
               <CardContent className="p-0">
                 <img
                   src={Portfolio}
                   alt="Gurleen Wadhwa"
-                  className="w-full h-auto rounded-lg"
+                  className="w-auto h-auto rounded-full"
                 />
               </CardContent>
             </Card>
