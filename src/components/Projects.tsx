@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import WhyImBrokeImage from "../assets/images/whyimbroke-logo.svg"
 
 const Projects = () => {
   const projects = [
@@ -14,37 +15,10 @@ const Projects = () => {
         "Prioritizing a scalable and maintainable application by focusing on a well-defined data model and intuitive basic UI as the initial development phase.",
         "Actively implementing CSV import functionality to enable users to seamlessly import historical financial data. Plaid integration for secure automated bank account syncing is planned as a subsequent development milestone.",
       ],
-      technologies: ["JavaScript", "React.js", "Recoil", "Express.js", "Node.js", "AWS", "GitHub"],
-      image: "/placeholder.svg?height=300&width=600",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Methane Emissions Platform",
-      description:
-        "A comprehensive platform for monitoring and analyzing methane emissions data with advanced visualization capabilities.",
-      details: [
-        "Developed modular React components with Redux for the frontend interface.",
-        "Created Python-Flask API endpoints integrated with MongoDB for efficient data retrieval.",
-        "Implemented GIS tools like Mapbox API and Deck GL for impactful emissions data visualizations.",
-      ],
-      technologies: ["React.js", "Redux", "Python", "Flask", "MongoDB", "Mapbox API", "Deck GL"],
-      image: "/placeholder.svg?height=300&width=600",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my skills, experience, and projects.",
-      details: [
-        "Built with React, TypeScript, and TailwindCSS for a clean, modern interface.",
-        "Implemented responsive design for optimal viewing on all devices.",
-        "Integrated dark/light mode toggle for enhanced user experience.",
-      ],
-      technologies: ["React", "TypeScript", "TailwindCSS", "ShadCN UI"],
-      image: "/placeholder.svg?height=300&width=600",
-      github: "#",
-      demo: "#",
+      technologies: ["TypeScript", "React.js", "Recoil", "Express.js", "Node.js", "AWS", "GitHub"],
+      image: WhyImBrokeImage,
+      github: "https://github.com/PaladiumLab/WhyImBroke",
+      demo: "https://github.com/PaladiumLab/WhyImBroke",
     },
   ]
 
@@ -60,7 +34,8 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 mx-52 px-52 gap-8"> */}
+        <div className="grid grid-cols-1 max-w-7xl mx-auto px-4 md:px-20 lg:px-52 gap-8">
           {projects.map((project, index) => (
             <Card
               key={index}

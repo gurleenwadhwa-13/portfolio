@@ -58,7 +58,7 @@ const Hero = () => {
               </motion.h2>
 
               <motion.p className="text-lg max-w-2xl mb-8 text-slate-700 dark:text-slate-300" variants={itemVariants}>
-              Exploring my interests in Compilers, Distributed Systems
+              Exploring my interests in Compilers, Distributed Systems, Human Psychology
               </motion.p>
 
               <motion.div className="flex flex-wrap justify-center gap-4 mb-12" variants={itemVariants}>

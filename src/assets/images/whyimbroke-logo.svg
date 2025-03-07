@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff" rx="20" ry="20"/>
+  
+  <!-- Main Logo Circle -->
+  <circle cx="200" cy="160" r="100" fill="#7209b7"/>
+  
+  <!-- Analytics Bar Chart Element -->
+  <g transform="translate(145, 130)">
+    <!-- Bar 1 -->
+    <rect x="0" y="40" width="20" height="30" rx="2" ry="2" fill="#ffffff"/>
+    
+    <!-- Bar 2 -->
+    <rect x="30" y="20" width="20" height="50" rx="2" ry="2" fill="#ffffff"/>
+    
+    <!-- Bar 3 -->
+    <rect x="60" y="10" width="20" height="60" rx="2" ry="2" fill="#ffffff"/>
+    
+    <!-- Bar 4 -->
+    <rect x="90" y="30" width="20" height="40" rx="2" ry="2" fill="#ffffff"/>
+    
+    <!-- Dollar Symbol Overlay -->
+    <path d="M55,0 C45,0 35,10 35,25 C35,40 45,50 55,50 C65,50 75,60 75,75 C75,90 65,100 55,100 M55,-5 L55,-15 M55,100 L55,115" 
+          fill="none" 
+          stroke="#4cc9f0" 
+          stroke-width="12" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Accent Elements -->
+  <circle cx="165" cy="170" r="5" fill="#ffba08"/>
+  <circle cx="225" cy="150" r="5" fill="#ffba08"/>
+  <circle cx="195" cy="140" r="5" fill="#ffba08"/>
+  
+  <!-- Company Name - bold typography only -->
+  <text x="200" y="310" font-family="Arial, sans-serif" font-size="45" font-weight="900" text-anchor="middle" fill="#3a0ca3">WhyImBroke</text>
+</svg>
