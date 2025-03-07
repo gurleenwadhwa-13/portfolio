@@ -177,7 +177,7 @@ export const PulseBeams: React.FC<PulseBeamsProps> = ({ children, className = ""
 const Particles = () => {
   return (
     <div className="absolute inset-0 z-10 opacity-30">
-      {[...Array(250)].map((_, i) => (
+      {[...Array(50)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute rounded-full bg-blue-400 dark:bg-blue-500"
@@ -199,7 +199,7 @@ const Particles = () => {
           }}
         />
       ))}
-      {[...Array(250)].map((_, i) => (
+      {[...Array(50)].map((_, i) => (
         <motion.div
           key={i + 25}
           className="absolute rounded-full bg-purple-400 dark:bg-purple-500"
