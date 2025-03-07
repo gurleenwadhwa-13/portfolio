@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center relative pt-16 overflow-hidden">
       <div className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
-        <PulseBeams className="mb-8 w-full max-w-4xl mx-auto">
+        <PulseBeams className="mb-8 w-full max-w-4xl mx-auto pointer-events-none">
           <motion.div
             className="backdrop-blur-sm bg-white/10 dark:bg-black/10 rounded-xl p-8 shadow-xl border border-slate-200/50 dark:border-white/10 relative overflow-hidden group"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -65,14 +65,14 @@ const Hero = () => {
               <motion.div className="flex flex-wrap justify-center gap-4 mb-12" variants={itemVariants}>
                 <Button
                   onClick={scrollToContact}
-                  className="bg-blue-500 hover:bg-blue-600 text-white transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 dark:bg-blue-500 dark:hover:bg-blue-600"
+                  className="bg-blue-500 hover:bg-blue-600 text-white transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 dark:bg-blue-500 dark:hover:bg-blue-600 pointer-events-auto"
                 >
                   Contact Me
                 </Button>
                 <Button
                   variant="outline"
                   asChild
-                  className="bg-white/80 border-slate-200 hover:bg-slate-100 text-slate-800 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 dark:text-white transition-all duration-300"
+                  className="bg-white/80 border-slate-200 hover:bg-slate-100 text-slate-800 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 dark:text-white transition-all duration-300 pointer-events-auto"
                 >
                   <a
                     href="https://drive.google.com/file/d/1gABmCZGeWEOv6lQwFjTSnJqn7QLkXL1T/view"
@@ -87,7 +87,7 @@ const Hero = () => {
               <motion.div className="flex justify-center gap-6" variants={itemVariants}>
                 <a
                   href="mailto:gurleenwadhwa3@gmail.com"
-                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200"
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200 pointer-events-auto"
                   aria-label="Email"
                 >
                   <Mail className="h-6 w-6" />
@@ -96,7 +96,7 @@ const Hero = () => {
                   href="https://www.linkedin.com/in/gurleen-wadhwa-56829a1a0/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200"
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200 pointer-events-auto"
                   aria-label="LinkedIn"
                 >
                   <FaLinkedinIn className="h-6 w-6" />
@@ -105,7 +105,7 @@ const Hero = () => {
                   href="https://github.com/gurleenwadhwa-13"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200"
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200 pointer-events-auto"
                   aria-label="GitHub"
                 >
                   <FiGithub className="h-6 w-6" />
@@ -114,7 +114,7 @@ const Hero = () => {
                   href="https://x.com/GurleenWadhwa1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200"
+                  className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-200 pointer-events-auto"
                   aria-label="Twitter"
                 >
                   <BsTwitterX className="h-6 w-6" />
