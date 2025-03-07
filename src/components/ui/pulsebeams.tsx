@@ -176,8 +176,8 @@ export const PulseBeams: React.FC<PulseBeamsProps> = ({ children, className = ""
 // Floating particles component
 const Particles = () => {
   return (
-    <div className="absolute inset-0 z-10 opacity-30">
-      {[...Array(50)].map((_, i) => (
+    <div className="absolute inset-0 z-10 opacity-70">
+      {[...Array(150)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute rounded-full bg-blue-400 dark:bg-blue-500"
@@ -192,17 +192,17 @@ const Particles = () => {
             opacity: [0.4, 0.8, 0.4],
           }}
           transition={{
-            duration: Math.random() * 3 + 2,
+            duration: Math.random() * 6 + 2,
             repeat: Number.POSITIVE_INFINITY,
             ease: "easeInOut",
             delay: Math.random() * 2,
           }}
         />
       ))}
-      {[...Array(50)].map((_, i) => (
+      {[...Array(550)].map((_, i) => (
         <motion.div
           key={i + 25}
-          className="absolute rounded-full bg-purple-400 dark:bg-purple-500"
+          className="absolute rounded-full bg-purple-400 dark:bg-white"
           style={{
             width: Math.random() * 3 + 1 + "px",
             height: Math.random() * 3 + 1 + "px",
@@ -214,17 +214,17 @@ const Particles = () => {
             opacity: [0.3, 0.7, 0.3],
           }}
           transition={{
-            duration: Math.random() * 4 + 3,
+            duration: Math.random() * 6 + 3,
             repeat: Number.POSITIVE_INFINITY,
             ease: "easeInOut",
             delay: Math.random() * 2,
           }}
         />
       ))}
-      {[...Array(250)].map((_, i) => (
+      {[...Array(550)].map((_, i) => (
         <motion.div
           key={i + 45}
-          className="absolute rounded-full bg-cyan-300 dark:bg-cyan-400"
+          className="absolute rounded-full bg-cyan-300 dark:bg-yellow-400"
           style={{
             width: Math.random() * 2 + 1 + "px",
             height: Math.random() * 2 + 1 + "px",
